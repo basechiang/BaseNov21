@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | BaseNov21</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=800 height=350 style="width: 800px; height: 350px;max-width: 800px;max-height:350px; background: #231F20"></canvas>
+<canvas id="unity-canvas" width=800 height=350 style="width: 800px; height: 350px;max-width: 800px;max-height:350px; background: #231F20"></canvas>
     <script src="Build/BaseNov21.loader.js"></script>
     <script>
 	isMobile =false;
@@ -25,7 +25,7 @@
         document.body.style.textAlign = "left";
 	isMobile =true;
       }
-
+ var myGameInstance = null;
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/BaseNov21.data.unityweb",
         frameworkUrl: "Build/BaseNov21.framework.js.unityweb",
@@ -36,7 +36,15 @@
         productVersion: "1.0",
          matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-      });
+      }).then((unityInstance) => {
+
+	 myGameInstance = unityInstance;
+	//myGameInstance.SendMessage('ValidateCode', 'ReceiveInputData', 'MyString');
+
+});
+
     </script>
+
+
   </body>
 </html>
