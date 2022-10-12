@@ -9,6 +9,7 @@
     <canvas id="unity-canvas" width=800 height=350 style="width: 800px; height: 350px;max-width: 800px;max-height:350px; background: #231F20"></canvas>
     <script src="Build/BaseNov21.loader.js"></script>
     <script>
+	isMobile =false;
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
@@ -22,6 +23,7 @@
         canvas.style.position = "fixed";
 
         document.body.style.textAlign = "left";
+	isMobile =true;
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
