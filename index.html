@@ -73,7 +73,10 @@ margin: auto;
         canvas.style.width = "100%";
         canvas.style.height = "100%";
         canvas.style.position = "fixed";
-
+	if(window.screen.width > 800)
+        {
+		canvas.style.padding = 5px;
+	}
         document.body.style.textAlign = "left";
 	isMobile =true;
   	
