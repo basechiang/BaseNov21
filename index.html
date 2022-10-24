@@ -25,8 +25,8 @@
         document.body.style.textAlign = "left";
 	isMobile =true;
       }
-
-screen.orientation.lock('landscape');
+ window.addEventListener("load", function(event) {
+    screen.orientation.lock('landscape');
 
  var myGameInstance = null;
       createUnityInstance(document.querySelector("#unity-canvas"), {
@@ -45,6 +45,8 @@ screen.orientation.lock('landscape');
 	//myGameInstance.SendMessage('ValidateCode', 'ReceiveInputData', 'MyString');
 
 });
+  });
+
 
     </script>
 
