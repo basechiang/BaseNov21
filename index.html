@@ -70,15 +70,8 @@ margin: auto;
         document.getElementsByTagName('head')[0].appendChild(meta);
 	
 	isMobile =true;
-	//window.screen.orientation.lock('landscape');
-	screen.orientation.lock('landscape') .then(() => {
-       alert('screen.orientation success');
-
-      }
-    )
-    .catch((error) => {
-       alert( `${error}\n`);
-    });;
+	//screen.orientation.lock('landscape');
+	
 
 
         var canvas = document.querySelector("#unity-canvas");
@@ -148,7 +141,7 @@ document.addEventListener("orientationchange", function(event){
             break; 
         default:
             /* Device is in portrait mode */
-	    window.screen.orientation.lock('landscape');
+	   // screen.orientation.lock('landscape');
     }
 });
 
