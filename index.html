@@ -71,13 +71,16 @@ margin: auto;
 	isMobile =true;
 	window.screen.orientation.lock('landscape');
         var canvas = document.querySelector("#unity-canvas");
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
-        canvas.style.position = "fixed";
 	if(window.screen.width > 800)
         {
-		canvas.style.padding = "5px";
+		canvas.style.width = "800px";
+		//canvas.style.padding = "5px";
 	}
+	else
+        	canvas.style.width = "100%";
+        canvas.style.height = "100%";
+        canvas.style.position = "fixed";
+	
         document.body.style.textAlign = "left";
 	
   	
