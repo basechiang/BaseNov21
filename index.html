@@ -73,10 +73,12 @@ margin: auto;
         var canvas = document.querySelector("#unity-canvas");
 	if(window.screen.width > 800)
         {
-		let sidemargin= (window.screen.width - 800)/2;
+		//let sidemargin= (window.screen.width - 800)/2;
+		let sidemargin= (document.body.offsetWidth - 800)/2;
+
 		canvas.style.width = "800px";
 		if(sidemargin > 5)
-		  canvas.style.left = 5 +"px";
+		  canvas.style.left = sidemargin +"px";
 		//else
 		 // canvas.style.left = sidemargin + "px";
 	}
