@@ -68,6 +68,7 @@ margin: auto;
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
 	
+	isMobile =true;
 	window.screen.orientation.lock('landscape');
         var canvas = document.querySelector("#unity-canvas");
         canvas.style.width = "100%";
@@ -75,10 +76,10 @@ margin: auto;
         canvas.style.position = "fixed";
 	if(window.screen.width > 800)
         {
-		canvas.style.padding = 5px;
+		canvas.style.padding = "5px";
 	}
         document.body.style.textAlign = "left";
-	isMobile =true;
+	
   	
       }
  window.addEventListener("load", function(event) {
