@@ -7,21 +7,19 @@
 
         <title>BaseNov21美術集</title>
         
-      
-  
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
         
         <link rel="stylesheet" href="./css/styles.css">
-     
+        
+        
         <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
      <!-- Styles -->
-
+     <link rel="stylesheet" href="http://127.0.0.1:8000/css/app.css">
 
 <!-- Scripts -->
 
@@ -41,9 +39,27 @@
         <span class="chapter-nav-title">BaseNov21美術集</span>
         <span class="chapter-nav-title chapter-nav-title-content ms-md-2"></span>
         <div class="float-end">
-            <a  class="previous round ms-md-5 chapter-nav-previous">&#8249;</a>
-            <a  class="next round ms-md-2  chapter-nav-next">&#8250;</a>
+            <a  class="btn btn-secondary rounded-1 bg-sercondary d-none d-lg-inline d-xl-inline d-md-inline "
+                    href="#artSetplayer">
+                播放器
+            </a>
+            <a  class="previous btn rounded-circle ms-md-5 chapter-nav-previous">&#8249;</a>
+            <a  class="next btn rounded-circle ms-md-2  chapter-nav-next">&#8250;</a>
         </div>
+        
+    </div>
+
+    <div class="offset-md-2 col-md-8 col-12 d-none p-2">
+
+            <div class="col-12 playitem  w-100">    
+           
+                    <div class=" card flex-grow-1">       
+                        <div class="row g-0 h-100">
+                            <img src="./uploads/images/art_set_start.png" class="img-fluid h-100  mx-auto obj-fit-contain" alt="">
+                        </div>
+                    </div  >   
+            
+            </div>
         
     </div>
       <!-- content chapter first-->
@@ -51,7 +67,7 @@
         
         <div class="row">
             
-            <div class="col-6 mt-3 col-md-4 chapter-title_outter">
+            <div class="col-6 mt-3 col-md-4 g-0 chapter-title_outter">
                 <div class=" bg-secondary p-2">
                     <p class="fs-3 fw-bold chapter-nav-chapter" chapter-nav-title-content="故事介紹">故事介紹</p>
                 </div>
@@ -79,9 +95,9 @@
         
         <div class="row">
             
-            <div class="col-6 mt-3 col-md-4 chapter-title_outter">
+            <div class="col-6 mt-3 col-md-4 g-0 chapter-title_outter">
                 <div class=" bg-secondary p-2">
-                    <p class="fs-3 fw-bold chapter-nav-chapter" chapter-nav-title-content="撥放器">手動播放器</p>
+                    <p class="fs-3 fw-bold chapter-nav-chapter" chapter-nav-title-content="撥放器">播放器</p>
                 </div>
             </div>
             <div class="col-12  mb-2  p-2  ">
@@ -93,6 +109,17 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="col-12 offset-md-2 col-md-8 mt-2">
+        <ul class="list-group">
+            <li class="list-group-item"> 
+                <button id="btn-artSetplayer-auto" class="btn btn-dark bg-dark" type="button">播放切換</button> 
+                <span  id="btn-artSetplayer-auto-text"  class= "fw-bold ms-3">手動撥放</span>
+                <button id="btn-artSetplayer-repeat" class="btn btn-dark bg-dark ms-3" type="button">循環切換</button> 
+                <span  id="btn-artSetplayer-repeat-text"  class= "fw-bold ms-3">不循環</span>
+            </li>
+        </ul>
+       
     </div>
     <div class="col-12 offset-md-2 col-md-8 mt-2">
             <div id="artSetplayer" class="carousel slide shadow "  data-bs-ride="carousel">
@@ -119,7 +146,7 @@
         
         <div class="row">
             
-            <div class="col-6 mt-3 col-md-4 chapter-title_outter">
+            <div class="col-6 mt-3 col-md-4 g-0 chapter-title_outter">
                 <div class=" bg-secondary p-2">
                     <p class="fs-3 fw-bold chapter-nav-chapter" chapter-nav-title-content="人物與表情">人物與表情</p>
                 </div>
@@ -439,7 +466,7 @@
         
         <div class="row">
             
-            <div class="col-6 mt-3 col-md-4 chapter-title_outter">
+            <div class="col-6 mt-3 col-md-4 g-0 chapter-title_outter">
                 <div class=" bg-secondary p-2">
                     <p class="fs-3 fw-bold chapter-nav-chapter" chapter-nav-title-content="場景與雜物">場景與雜物</p>
                 </div>
@@ -537,7 +564,7 @@
         
         <div class="row">
             
-            <div class="col-6 mt-3 col-md-4 chapter-title_outter">
+            <div class="col-6 mt-3 col-md-4 g-0 chapter-title_outter">
                 <div class=" bg-secondary p-2">
                     <p class="fs-3 fw-bold chapter-nav-chapter" chapter-nav-title-content="未錄選">未錄選</p>
                 </div>
@@ -567,7 +594,7 @@
         
         <div class="row">
             
-            <div class="col-6 mt-3 col-md-4 chapter-title_outter">
+            <div class="col-6 mt-3 col-md-4 g-0 chapter-title_outter">
                 <div class=" bg-secondary p-2">
                     <p class="fs-3 fw-bold chapter-nav-chapter " chapter-nav-title-content="後記">後記</p>
                 </div>
@@ -575,26 +602,29 @@
             <div class="col-12  mb-5 mt-2 p-2 chapter-nav-chapter-last ">
                 <div class="chapter-introduce-outter p-3">
                     <div class="chapter-content-text">
-                        開始製作到結束，都是親力親為，從編劇畫圖到音樂都是自己弄，本來想送最後通關那張賀卡，後來想想太薄弱了，
-                        所以才改成製作這個類遊戲，不像遊戲卻是遊戲開發軟體寫的，其實我更想做成動畫，但是免費仔遇到太多難題，沒有
+                        從開始製作到結束，都是親力親為，編劇畫圖到音樂也都是自己弄，本來只想送最後通關那張賀卡，後來想想這麼多年，
+                        只給這一點，太薄弱了，所以才改成製作這個類遊戲，不像遊戲卻是遊戲開發軟體寫的，其實我更想做成動畫，但是免費仔遇到太多難題，沒有
                         好的mic所以就沒錄音，反正我聲音也不太好聽，剛好避掉這個問題，雖然結尾很想唱聽就是了，但是我不能。
                     </div>
                     <div class="chapter-content-text">
-                        設計最困難應該是音樂，完全不知道該怎麼辦，結果找到Waveform 12 free幫它打個廣告，配合簡單虛擬樂器，隨便亂按，
-                        就完成背景音樂了，不過第一次接觸，花了很多時間在那個領域，所以我說結尾那個也是我按的，所以注意聽會卡卡的，
-                        手指不靈活，一直按錯，練了好久。
+                        設計最困難應該是音樂，完全不知道該怎麼辦，結果找到<strong>Waveform 12 free</strong>，幫它打個廣告，配合簡單虛擬樂器，
+                        即便是隨便亂按，也能完成背景音樂，不過第一次接觸，花了很多時間在那個領域，認識一些音樂相關的部分，也對錄音比較多認識，
+                        也對音樂軟體虛擬樂器多了一些琢磨，所以我說結尾那個也是我按的，注意聽會發現卡卡的，我手指不靈活，一直按錯，練了好久。
                     </div>
                     <div class="chapter-content-text">
-                        程式設計是用Unity，原本以為這種對話框早就是模組，應該說這類型應該要有腳本直接帶入，雖然好像真的有，但是好像都要＄，免費仔只好親力親為，
-                        基本上都是找資料弄一弄就好了，有些判斷文字邏輯就靠別人寫的，以前有寫過類似，不同語言，很繁瑣，結果發現C#本身提供好蠻多功能物件，
-                        過程還算順利，但是也是很花時間，特別是發佈一次就要編個20分鐘，才體認到自己老了，長年夥伴(notebook)也老了。
+                        程式設計是用<strong>Unity</strong>，原本以為這種對話框類型的早就是模組，應該說這類型應該要有腳本直接帶入，雖然好像真的有，但是好像都要＄，
+                        免費仔只好親力親為，基本上都是找資料弄一弄就好了，有些判斷文字邏輯就靠別人寫的，以前有也有寫過類似，不同語言，很繁瑣，
+                        結果發現<strong>C#</strong>本身提供好蠻多功能物件，過程還算順利，但是也是很花時間，特別是發佈一次就要編個20分鐘，才體認到自己老了，長年夥伴(notebook)也老了，
+                        還有一開始選擇的環境是PC後來轉換成網頁，很多部分沒支援都要調整，但最後還是有完成這種程度，雖然還是很多要改進就是。
                     </div>
                     <div class="chapter-content-text">
-                        圖片就靠小畫家3D，還算堪用，問題就是沒圖層，對新手很吃力，但是免錢就不要一直嫌了。雖然這些都免錢，但是此作品加了我的用心，
-                        希望你可以輕鬆看待，附帶一提這網頁也寫好久，雖然內容不飽滿，省時間就是它的特色。
+                        圖片就靠<strong>小畫家3D</strong>，還算堪用，問題就是沒圖層，對新手很吃力，但是免錢就不要一直嫌了。美術部分就是盡力了，
+                        我不會畫圖，靠著網路查了一些技巧，像是Ｑ版比例，臉型盡量變寬，鼻子拿掉，盡力的畫。雖然這些都免錢，但是此作品加了我的用心，
+                        希望妳可以輕鬆看待，附帶一提這網頁也寫好久，一直在想怎麼呈現比較好，雖然內容不飽滿，好閱讀省時間就是它的特色，設計理念是畫廊，
+                        本身沒去過美術館，都是從一些卡通畫面去調整呈現，木頭畫框，要貼標題，本來還有一欄作者，但是都是我自己，乾脆就不要這個，省。
                     </div>
                     <div class="chapter-content-text">
-                        最後一段當然是，生日快樂！
+                        最後一段當然是，<strong>生日快樂！</strong>
                     </div>
                 </div>
             </div>
@@ -613,25 +643,104 @@
         this.palyerItem = this.palyer_element.querySelector('.carousel-item.active');
         this.index=0;
         this.playItems = document.querySelectorAll('.playitem');
+        this.autoToggle = false;
+        this.autoTimer = null;
+        this.fadeinTimer = null;
+        this.autoInterval =5000;
+        this.fadeinOpacity=0.4
+        this.fadeinIncrement=(1-this.fadeinOpacity)/10 ;
+        this.repeatPlay = false;
         this.show = function(){
             this.palyerItem.innerHTML =   this.playItems[this.index].innerHTML;
+        } 
+        this.showAndFadeIn = function(){
+            this.show();
+
+            
+            if(this.index > 0 && this.index < this.playItems.length){
+                let element_opacity=this.fadeinOpacity;
+                let element= this.palyer_element;
+                //stop prev fadein timer
+                if(this.fadeinTimer!==null)
+                {
+                    clearInterval(this.fadeinTimer);
+                    this.fadeinTimer=null;
+                }
+                element.style.MozOpacity =  element.style.KhtmlOpacity = element.style.opacity = element_opacity;
+                let increment=this.fadeinIncrement;            
+                this.fadeinTimer=setInterval(( function(){
+                    element.style.opacity  = parseFloat(element.style.opacity ) + increment;
+                    if(  element.style.opacity >1.0)
+                        element.style.opacity=1.0;
+                    element.style.MozOpacity = element.style.KhtmlOpacit = element.style.opacity;
+                    if(element.style.opacity >= 1.0)
+                    {
+                        clearInterval(this.fadeinTimer);
+                        this.fadeinTimer=null;
+                    }
+                } ).bind(this)  , 100);   
+            }
         }
-        this.preview = function(){
+        this.preview = function( fadein=false){
+            if(this.repeatPlay)
+                if(this.index == 0)
+                    this.index = this.playItems.length;
             if(this.index>0)
             {
                 this.index--;
-                this.show();
+                if(fadein)
+                    this.showAndFadeIn();
+                else
+                    this.show();
             }
                 
         }
-        this.goNext = function(){
+        this.goNext = function(fadein=false){
+            if(this.repeatPlay)
+                if(this.index == this.playItems.length-1)
+                    this.index = -1;
+
             if(this.index <  this.playItems.length-1)
             {
                 this.index++;
-                this.show();
+                if(fadein)
+                    this.showAndFadeIn();
+                else
+                    this.show();
+            }
+            
+        }
+        this.autoPlay = function(){
+            this.autoToggle = !this.autoToggle;
+
+            if(this.autoToggle)
+            {
+                
+                if( this.autoTimer === null)
+                {
+                    this.autoTimer = setInterval(
+                        function(){
+                           
+                            if(this.autoTimer !== null)
+                            {
+                                this.goNext(true);
+                            }
+                        }.bind(this),
+                        this.autoInterval
+                    );
+                }
+                
+            }
+            else{
+                clearInterval(this.autoTimer);
+                this.autoTimer=null;
             }
         }
-        
+        this.toggleReapet = function()
+        {
+            return   this.repeatPlay = !this.repeatPlay;
+        }
+
     }
     var myCarousel = document.querySelector('#artSetplayer');
     var  myCarouselItems = myCarousel.querySelector('.carousel-item.active');
@@ -639,52 +748,43 @@
     var  artSetPlayer = new ArtSetPlayer('#artSetplayer');
     myCarousel.querySelector('.carousel-control-prev').addEventListener('click', function (event) {
             
-            if(artSetPlayer.index > 0){
-                let element_opacity=0.4;
-                let element=myCarousel.querySelector('.carousel-item');
-
-                element.style.MozOpacity =  element.style.KhtmlOpacity = element.style.opacity = element_opacity;
-
-                let increment=(1-0.4)/10;            
-                let timer=setInterval(( function(){
-                    element.style.opacity  = parseFloat(element.style.opacity ) + increment;
-                    if(  element.style.opacity >1.0)
-                        element.style.opacity=1.0;
-                    element.style.MozOpacity = element.style.KhtmlOpacit = element.style.opacity;
-                    if(element.style.opacity >= 1.0)
-                        clearInterval(timer);
-                } )
-                                , 100);   
-            }
-            artSetPlayer.preview();
+           
+            artSetPlayer.preview(true);
         });
         myCarousel.querySelector('.carousel-control-next').addEventListener('click', function (event) {
-            if(artSetPlayer.index <  artSetPlayer.playItems.length-1)
-            {
-                let element_opacity=0.4;
-                let element=myCarousel.querySelector('.carousel-item');
-
-                element.style.MozOpacity =  element.style.KhtmlOpacity = element.style.opacity = element_opacity;
-
-                let increment=(1-0.4)/(15);            
-                let timer=setInterval(( function(){
-                    element.style.opacity  = parseFloat(element.style.opacity ) + increment;
-                    if(  element.style.opacity >1.0)
-                        element.style.opacity=1.0;
-                    element.style.MozOpacity = element.style.KhtmlOpacit = element.style.opacity;
-        
-                    if(element.style.opacity >= 1.0)
-                        clearInterval(timer);
-                } )
-                                , 100);    
-             }
-            artSetPlayer.goNext();
+           
+            artSetPlayer.goNext(true);
         });
    
         artSetPlayer.show();
-
-
-
+        //auto play
+       
+        var btnArtSetplayerAuto = document.querySelector('#btn-artSetplayer-auto');
+        btnArtSetplayerAuto.addEventListener('click', function (event) {
+            artSetPlayer.autoPlay();
+            if(artSetPlayer.autoToggle)
+            {
+                document.querySelector('#btn-artSetplayer-auto-text').innerHTML='自動撥放';
+                myCarousel.querySelector('.carousel-control-prev').classList.add("d-none");
+                myCarousel.querySelector('.carousel-control-next').classList.add("d-none");
+            }
+            else{
+                document.querySelector('#btn-artSetplayer-auto-text').innerHTML='手動撥放';
+                myCarousel.querySelector('.carousel-control-prev').classList.remove("d-none");
+                myCarousel.querySelector('.carousel-control-next').classList.remove("d-none");
+            }
+        });
+        var btnArtSetplayerRepeat = document.querySelector('#btn-artSetplayer-repeat');
+        btnArtSetplayerRepeat.addEventListener('click', function (event) {
+           
+            if(artSetPlayer.toggleReapet())
+            {
+                document.querySelector('#btn-artSetplayer-repeat-text').innerHTML='循環';
+            }
+            else{
+                document.querySelector('#btn-artSetplayer-repeat-text').innerHTML='不循環';
+            }
+        });
 </script>
 
 
