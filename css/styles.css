@@ -147,7 +147,7 @@
     .chapter-title_outter::after{
        
       margin-left: -.82em;
-      border-width: 2.15rem;
+      border-width: 2.1rem;
   
     }
     .chapter-nav .chapter-nav-title{
@@ -163,7 +163,7 @@
     .chapter-title_outter::after{
        
       margin-left: -.8em;
-      border-width: 2.2rem;
+      border-width: 2.16rem;
   
     }
     
@@ -176,7 +176,7 @@
       .chapter-title_outter::after{
        
         margin-left: -.75em;
-        border-width: 2.25rem;
+        border-width: 2.22rem;
     
       }
 }
@@ -188,7 +188,7 @@
       .chapter-title_outter::after{
    
       margin-left: -.75em;
-      border-width: 2.3rem;
+      border-width: 2.27rem;
 
     }
 }
@@ -198,7 +198,7 @@
       .chapter-title_outter::after{
    
       margin-left: -.75em;
-      border-width: 2.35rem;
+      border-width: 2.31rem;
 
     }
 }
